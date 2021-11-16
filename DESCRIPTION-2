@@ -1,0 +1,15 @@
+Package: PROTREC
+Type: Package
+Title: Predicted and validation of missing proteins based on protein complexes or networks
+Version: 0.1
+Date: 2021-11-19
+Author: Weijia Kong, Wilson Wen Bin Goh
+Maintainer: Weijia Kong <weijia002@e.ntu.edu.sg>
+Description: Predicted and validation of missing proteins based on protein complexes or networks. The package includes popular protein recovery functions such as PROTREC, Functional Class Scoring (FCS), Hypergeometric Enrichment (HE) and Gene Set Enrichment Analysis (GSEA). The package also contains recovery rate to evaluate the performance of each method.
+License: GPL-3
+LazyData: TRUE
+RoxygenNote: 7.1.0
+Imports:
+	dplyr,
+	viper,
+	car
