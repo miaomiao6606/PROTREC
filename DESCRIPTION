@@ -1,0 +1,17 @@
+Package: PROTREC
+Type: Package
+Title: Predicted and validation of missing proteins based on protein complexes or networks.
+Version: 1.0.0
+Date: 2021-11-16
+Authors@R: c(person("Weijia", "Kong", email = "weijia002@e.ntu.edu.sg", role = c("cre")),person("Wilson", "Goh", email = "wilsongoh@ntu.edu.sg", role = c("aut")))
+Maintainer: Weijia Kong <weijia002@e.ntu.edu.sg>
+Description: Predicted and validation of missing proteins based on protein complexes or networks. The package includes popular protein recovery functions such as PROTREC, Functional Class Scoring (FCS), Hypergeometric Enrichment (HE) and Gene Set Enrichment Analysis (GSEA). The package also contains recovery rate to evaluate the performance of each method.
+Depends: R (>= 4.0.0)
+Imports: dplyr, viper, car
+Suggests: knitr
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.2
+VignetteBuilder: knitr
+
