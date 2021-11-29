@@ -113,6 +113,7 @@ GSEA generates a matrix of p-values based on significant enrichment of observed 
       repgsea <- function(data, complex_vector)
 
 It takes a data matrix (For example, RC_N) and a vector of complex features (For example, complex_vector) as its primary inputs. 
+
       rc_ngsea_p <- repgsea(RC_N,complex_vector)
 
 #### GSEA individual protein probability
