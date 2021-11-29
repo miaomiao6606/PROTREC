@@ -34,8 +34,17 @@ A peptide based validation file for RC (RC_peptides_uniq) is available. This is 
 ## Protein Reovery Methods
 
 ### FCS
-FCS generates a matrix of p-values based on significant enrichment of observed proteins against a vector of complexes. It takes a data matrix (RCC_original) and a vector of complex features as its primary inputs. Sim_size is the number of simulations and should  be set to 1000 typically. Threshold is the minimal complex size to consider (default is usually size 5). 
+FCS generates a matrix of p-values based on significant enrichment of observed proteins against a vector of complexes. It takes a data matrix (For example, RC_N) and a vector of complex features (For example, complex_vector) as its primary inputs. Sim_size is the number of simulations and should be set to 1000 typically. Threshold is the minimal complex size to consider (default is usually size 5). 
 
-      fcs(RCC_original, complex_vector,sim_size=1000, threshold=5)
+      fcs_rc_n <- fcs(RC_N,complex_vector,1000,5)
 
-Note that FCS can take a while to run, especially if there are many samples, and a large feature vector to consider. A example output is provided in fcs_rc_n.
+Note that FCS can take a while to run, especially if there are many samples, and a large feature vector to consider.
+
+### fcs_prot_prob_assign
+fcs_prot_prob_assign assigns probabilities to individual proteins based on the FCS probability.
+
+      fcs_prot_prob_assign <- function(cplx, p)
+      
+Where cplx is the complex vector and p is a vector of complex-based probabilities derived from FCS. Since FCS provides p-values, then p is simply (1 - FCS p-values). For example:
+
+      fcs_prot_rc_n_1 <- prot_prob_fcs(complex_vector, 1 - fcs_rc_n[1,])
