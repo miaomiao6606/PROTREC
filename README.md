@@ -28,7 +28,7 @@ A peptide based validation file for RC (RC_peptides_uniq) is available. This is 
 
     RC_cancer <- data(RC_C)
     RC_normal <- data(RC_N)
-    peptide_support <- data(RC_peptides_uniq)
+    RC_peptides_uniq <- data(RC_peptides_uniq)
     
 
 ## Protein Reovery Methods
