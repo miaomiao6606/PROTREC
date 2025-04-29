@@ -11,6 +11,16 @@ PROTREC
 
 ## Getting Started
 
+**Installation From GitHub**:
+   First, ensure you have the **devtools** package installed. If not, install it by running:
+   ```R
+   install.packages("devtools")
+   ```
+   Then, you can install PROTREC directly from GitHub:
+   ```R
+   devtools::install_github("miaomiao6606/PROTREC")
+   ```
+
 ## Example data included in the package
 First we need to find some network information to act as the feature vector. PROTREC works well with real complexes and this data can be obtained from CORUM (http://mips.helmholtz-muenchen.de/genre/proj/corum/).
 
